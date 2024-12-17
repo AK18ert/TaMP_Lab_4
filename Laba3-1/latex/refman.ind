@@ -1,0 +1,14 @@
+\begin{theindex}
+
+  \item {check}
+    \subitem {main.cpp}, \hyperpage{12}
+  \item {cipher\_error}, \hyperpage{7}
+
+  \indexspace
+
+  \item {main.cpp}, \hyperpage{11}
+    \subitem {check}, \hyperpage{12}
+  \item {modAlphaCipher}, \hyperpage{8}
+  \item {modAlphaCipher.cpp}, \hyperpage{12}
+
+\end{theindex}

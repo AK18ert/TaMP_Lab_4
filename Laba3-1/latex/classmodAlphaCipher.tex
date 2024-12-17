@@ -1,0 +1,67 @@
+\doxysection{Класс mod\+Alpha\+Cipher}
+\hypertarget{classmodAlphaCipher}{}\label{classmodAlphaCipher}\index{modAlphaCipher@{modAlphaCipher}}
+
+
+Шифрование методом Гронсфельда  
+
+
+
+
+{\ttfamily \#include $<$mod\+Alpha\+Cipher.\+h$>$}
+
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classmodAlphaCipher_a314fca132f4e74faca280b7c1fad7cb5}\label{classmodAlphaCipher_a314fca132f4e74faca280b7c1fad7cb5} 
+{\bfseries mod\+Alpha\+Cipher} (const std\+::wstring \&skey)
+\begin{DoxyCompactList}\small\item\em запрет конструктор без параметров \end{DoxyCompactList}\item 
+\Hypertarget{classmodAlphaCipher_a5edc499881373a275a3cd14f0cab6c19}\label{classmodAlphaCipher_a5edc499881373a275a3cd14f0cab6c19} 
+std\+::wstring {\bfseries encrypt} (const std\+::wstring \&open\+\_\+text)
+\begin{DoxyCompactList}\small\item\em конструктор для установки ключа \end{DoxyCompactList}\item 
+\Hypertarget{classmodAlphaCipher_a941eab79d9ec1a8de4e1f9cf2a80ff35}\label{classmodAlphaCipher_a941eab79d9ec1a8de4e1f9cf2a80ff35} 
+std\+::wstring {\bfseries decrypt} (const std\+::wstring \&cipher\+\_\+text)
+\begin{DoxyCompactList}\small\item\em зашифрование \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Закрытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classmodAlphaCipher_a12ace58352c18bac7a7b61f312a4c8d6}\label{classmodAlphaCipher_a12ace58352c18bac7a7b61f312a4c8d6} 
+std\+::vector$<$ int $>$ {\bfseries convert} (const std\+::wstring \&s)
+\begin{DoxyCompactList}\small\item\em ключ \end{DoxyCompactList}\item 
+\Hypertarget{classmodAlphaCipher_ac86303da1bf6467d3afd928a0e781f97}\label{classmodAlphaCipher_ac86303da1bf6467d3afd928a0e781f97} 
+std\+::wstring {\bfseries convert} (const std\+::vector$<$ int $>$ \&v)
+\begin{DoxyCompactList}\small\item\em преобразование строка-\/вектор \end{DoxyCompactList}\item 
+\Hypertarget{classmodAlphaCipher_a36544c603bcd87edcc33df0c8fa26c9f}\label{classmodAlphaCipher_a36544c603bcd87edcc33df0c8fa26c9f} 
+std\+::wstring {\bfseries get\+Valid\+Key} (const std\+::wstring \&s)
+\begin{DoxyCompactList}\small\item\em преобразование вектор-\/строка \end{DoxyCompactList}\item 
+\Hypertarget{classmodAlphaCipher_a8e2be98736fee4107c92f5a8fcba4d1d}\label{classmodAlphaCipher_a8e2be98736fee4107c92f5a8fcba4d1d} 
+std\+::wstring {\bfseries get\+Valid\+Open\+Text} (const std\+::wstring \&s)
+\item 
+\Hypertarget{classmodAlphaCipher_a67de093db93e0dab43381326d4da1835}\label{classmodAlphaCipher_a67de093db93e0dab43381326d4da1835} 
+std\+::wstring {\bfseries get\+Valid\+Cipher\+Text} (const std\+::wstring \&s)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classmodAlphaCipher_ab7e0c7d3c87f4c8b7435d84f31c6cb62}\label{classmodAlphaCipher_ab7e0c7d3c87f4c8b7435d84f31c6cb62} 
+std\+::wstring {\bfseries num\+Alpha} = L"{}АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ"{}
+\item 
+\Hypertarget{classmodAlphaCipher_a055d3e6e986a0e1d3c99a8b666bae39c}\label{classmodAlphaCipher_a055d3e6e986a0e1d3c99a8b666bae39c} 
+std\+::map$<$ char, int $>$ {\bfseries alpha\+Num}
+\item 
+\Hypertarget{classmodAlphaCipher_aaddfb3bc0a3806b17e94c56fea5bad87}\label{classmodAlphaCipher_aaddfb3bc0a3806b17e94c56fea5bad87} 
+std\+::vector$<$ int $>$ {\bfseries key}
+\begin{DoxyCompactList}\small\item\em ассоциативный массив "{}номер по символу"{} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Шифрование методом Гронсфельда 
+
+Ключ устанавливается в конструкторе. Для зашифровывания и расшифровывания предназначены методы encrypt и decrypt. \begin{DoxyWarning}{Предупреждения}
+Реализация только для русского языка 
+\end{DoxyWarning}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+mod\+Alpha\+Cipher.\+h\item 
+\mbox{\hyperlink{modAlphaCipher_8cpp}{mod\+Alpha\+Cipher.\+cpp}}\end{DoxyCompactItemize}

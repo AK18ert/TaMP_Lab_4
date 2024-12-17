@@ -1,0 +1,34 @@
+\doxysection{Gamma\+Ciper.\+h}
+\hypertarget{GammaCiper_8h_source}{}\label{GammaCiper_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <locale>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <stdexcept>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <codecvt>}}
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classGammaCipher}{GammaCipher}}}
+\DoxyCodeLine{00015\ \{}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ key;\ }
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classGammaCipher_a54fbed4ddb0bd339042ade04cfdc51a2}{GammaCipher}}()\ =\ \textcolor{keyword}{delete};\ }
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classGammaCipher_a54fbed4ddb0bd339042ade04cfdc51a2}{GammaCipher}}(\textcolor{keywordtype}{int}\ key);\ }
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ std::wstring\ \mbox{\hyperlink{classGammaCipher_a83051f2b8e9680f9458ead14787f80c2}{encrypt}}(\textcolor{keyword}{const}\ std::wstring\&\ text);\ }
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ std::wstring\ \mbox{\hyperlink{classGammaCipher_abc9af8ceaac458a25330a5ad7931d65f}{decrypt}}(\textcolor{keyword}{const}\ std::wstring\&\ encrypted\_text);}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ std::wstring\ \mbox{\hyperlink{classGammaCipher_a40941b565a87410f115280641e4f26c1}{getValidKey}}(\textcolor{keyword}{const}\ std::wstring\ \&\ s);\ }
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ std::wstring\ \mbox{\hyperlink{classGammaCipher_a036daabcd0984bf4d731cec6436f5846}{getValidOpenText}}(\textcolor{keyword}{const}\ std::wstring\ \&\ s);\ }
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ std::wstring\ \mbox{\hyperlink{classGammaCipher_aabcb743f9112a44ea14fb16c10187367}{getValidCipherText}}(\textcolor{keyword}{const}\ std::wstring\ \&\ s);}
+\DoxyCodeLine{00026\ \};}
+\DoxyCodeLine{00031\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classcipher__error}{cipher\_error}}:\ \textcolor{keyword}{public}\ std::invalid\_argument\ \{}
+\DoxyCodeLine{00032\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classcipher__error}{cipher\_error}}\ (\textcolor{keyword}{const}\ std::string\&\ what\_arg):}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ std::invalid\_argument(what\_arg)\ \{\}}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classcipher__error}{cipher\_error}}\ (\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ what\_arg):}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ std::invalid\_argument(what\_arg)\ \{\}}
+\DoxyCodeLine{00037\ \};}
+
+\end{DoxyCode}
